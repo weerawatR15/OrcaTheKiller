@@ -1,0 +1,45 @@
+local folder = Instance.new("Folder", parent)
+
+folder.Name = "DoorsAudio"
+
+folder.Parent = Workspace
+
+local part = game.Workspace.Part
+
+part.Name = "Footsteps"
+
+part.Parent = workspace
+
+-- create a sound
+
+local sound = Instance.new("Sound", part)
+
+sound.SoundId = "rbxassetid://8880765497" 
+
+sound.Pitch = 0.5
+
+sound.EmitterSize = 25 -- decrease the emitter size (for earlier volume drop off)
+
+sound.Looped = true
+
+sound.Parent = game.Workspace.Footsteps
+
+sound.Volume = 1
+
+sound:Play()
+
+local sound2 = Instance.new("Sound", part)
+
+sound2.SoundId = "rbxassetid://8880765497" 
+
+sound2.Pitch = 0.55
+
+sound2.EmitterSize = 2 -- decrease the emitter size (for earlier volume drop off)
+
+sound2.Looped = true
+
+sound2.Parent = game.Workspace.Footsteps
+
+sound2.Volume = 10
+
+sound2:Play()
