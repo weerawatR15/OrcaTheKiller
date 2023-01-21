@@ -22,7 +22,7 @@ sound.SoundId = "rbxassetid://8880765497"
 sound.Pitch = 0.5
 sound.EmitterSize = 25 -- decrease the emitter size (for earlier volume drop off)
 sound.Looped = true
-sound.Parent = game.Workspace.Footsteps
+sound.Parent = game.Workspace.DoorsAudio.Footsteps
 sound.Volume = 1
 sound:Play()
 
@@ -31,7 +31,7 @@ sound2.SoundId = "rbxassetid://8880765497"
 sound2.Pitch = 0.55
 sound2.EmitterSize = 2 -- decrease the emitter size (for earlier volume drop off)
 sound2.Looped = true
-sound2.Parent = game.Workspace.Footsteps
+sound2.Parent = game.Workspace.DoorsAudio.Footsteps
 sound2.Volume = 10
 sound2:Play()
 
