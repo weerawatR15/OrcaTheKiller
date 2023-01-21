@@ -23,16 +23,16 @@ sound.Pitch = 0.5
 sound.EmitterSize = 25 -- decrease the emitter size (for earlier volume drop off)
 sound.Looped = true
 sound.Parent = game.Workspace.DoorsAudio.Footsteps
-sound.Volume = 1
+sound.Volume = 3
 sound:Play()
-
+task.wait(1)
 local sound2 = Instance.new("Sound", part)
 sound2.SoundId = "rbxassetid://8880765497" 
 sound2.Pitch = 0.55
-sound2.EmitterSize = 2 -- decrease the emitter size (for earlier volume drop off)
+sound2.EmitterSize = 5 -- decrease the emitter size (for earlier volume drop off)
 sound2.Looped = true
 sound2.Parent = game.Workspace.DoorsAudio.Footsteps
-sound2.Volume = 10
+sound2.Volume = 6
 sound2:Play()
 
 local args = {
@@ -48,6 +48,13 @@ local Ambush = game.Workspace.Part
 Ambush.Name = "AmbushNew"
 Ambush.parent = game.Workspace.DoorsAudio
 
-local attachment = Instance.new("Attachment")
+local attachment = Instance.new("BillboardGui")
 attachment.Name = "Attachment"
 attachment.Parent = game.Workspace.DoorsAudio.AmbushNew
+
+local image = Instance.new("ImageLabel")
+image.Name = "ImageLabel"
+image.Parent = game.Workspace.DoorsAudio.AmbushNew.Attachment
+image.UDim2.new(1, 0, 1, 0)
+image.TextureId = "rbxassetid://11816152645"
+print("waaa it worked")
