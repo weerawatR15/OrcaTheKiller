@@ -148,12 +148,12 @@ Label.BackgroundTransparency = 1
 
 local animation = game.Workspace.DoorsAudio.A60
 while true do
-animation.TextureId = "rbxassetid://11710147805"
+animation.Image = "rbxassetid://11710147805"
 task.wait(0.5)
-animation.TextureId = "rbxassetid://11710144220"
+animation.Image = "rbxassetid://11710144220"
 task.wait(0.5)
-animation.TextureId = "rbxassetid://11710154026"
+animation.Image = "rbxassetid://11710154026"
 task.wait(0.5)
-animation.TextureId = "rbxassetid://11287256498"
+animation.Image = "rbxassetid://11287256498"
 task.wait(0.5)
 end
