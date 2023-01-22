@@ -47,7 +47,6 @@ task.wait(1)
 local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
 Ambush.Parent = game.Workspace.DoorsAudio
-task.wait(5)
 
 local billboard = Instance.new("BillboardGui")
 billboard.Name = "Billy"
@@ -73,7 +72,7 @@ task.wait(1)
 local rysh = game.Workspace.Part
 rysh.Name = "RushNew"
 rysh.Parent = game.Workspace.DoorsAudio
-task.wait(5)
+task.wait(1)
 local ParticleEmitter = Instance.new("ParticleEmitter")
 ParticleEmitter.Parent = game.Workspace.DoorsAudio.RushNew
 ParticleEmitter.Texture = "rbxassetid://12234037224"
@@ -106,7 +105,7 @@ task.wait(1)
 local ripper = game.Workspace.Part
 ripper.Name = "ripe"
 ripper.Parent = game.Workspace.DoorsAudio
-task.wait(5)
+task.wait(1)
 
 local bill = Instance.new("BillboardGui")
 bill.Name = "bill"
