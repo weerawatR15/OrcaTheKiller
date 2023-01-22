@@ -121,6 +121,15 @@ sound3.Parent = game.Workspace.DoorsAudio.ripe
 sound3.Volume = 10
 sound3:Play()
 
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "Hitbox"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(1)
 local hetbox = game.Workspace.Part
 hetbox.Name = "Hitbox"
 hetbox.Parent = game.Workspace.DoorsAudio.ripe
