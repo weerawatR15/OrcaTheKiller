@@ -138,7 +138,7 @@ a.Parent = game.Workspace.DoorsAudio
 local WetWilly = Instance.new("BillboardGui")
 WetWilly.Name = "Willy"
 WetWilly.Parent = game.Workspace.DoorsAudio.A60
-bill.Size = UDim2.new(10.0, 0, 10.0, 0)
+WetWilly.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local Label = Instance.new("ImageLabel")
 Label.Parent = game.Workspace.DoorsAudio.A60.Willy
