@@ -108,7 +108,7 @@ bill.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imLabel = Instance.new("ImageLabel")
 imLabel.Parent = game.Workspace.DoorsAudio.ripe.bill
-imLabel.Image = "rbxassetid://11816152645" -- replace with the actual asset id of the image you want to use
+imLabel.Image = "rbxassetid://12236682339" -- replace with the actual asset id of the image you want to use
 imLabel.Size = UDim2.new(1, 0, 1, 0)
 imLabel.BackgroundTransparency = 1
 
@@ -120,6 +120,19 @@ sound3.Looped = true
 sound3.Parent = game.Workspace.DoorsAudio.ripe
 sound3.Volume = 10
 sound3:Play()
+
+local hetbox = game.Workspace.Part
+hetbox.Name = "Hitbox"
+hetbox.Parent = game.Workspace.DoorsAudio.ripe
+
+local hitbox = game.Workspace.DoorsAudio.ripe.Hitbox
+local anger = game.Workspace.DoorsAudio.ripe.bill.ImageLabel
+
+hitbox.Touched:Connect(function(hit)
+    if hit.Parent:FindFirstChild("Humanoid") then
+        anger.Image = "rbxassetid://12236682339"
+    end
+end)
 
 local args = {
     [1] = {
