@@ -46,6 +46,7 @@ game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(arg
 task.wait(5)
 local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
+task.wait(1)
 Ambush.parent = game.Workspace.DoorsAudio
 
 local billboard = Instance.new("BillboardGui")
@@ -55,6 +56,6 @@ billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imageLabel = Instance.new("ImageLabel")
 imageLabel.Parent = game.Workspace.DoorsAudio.Ambush.Billy
-imageLabel.Image = "rbxassetid://10722835168" -- replace with the actual asset id of the image you want to use
+imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
