@@ -51,9 +51,11 @@ Ambush.parent = game.Workspace.DoorsAudio
 local billboard = Instance.new("BillboardGui")
 billboard.Size = UDim2.new(3, 0, 3, 0)
 billboard.StudsOffset = Vector3.new(0, 2, 0)
+billboard.Name = "billy"
 billboard.Adornee = game.Workspace.DoorsAudio.Ambush
 
 local imageLabel = Instance.new("ImageLabel")
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
-imageLabel.Text = "Hello, World!"
-imageLabel.Parent = billboard
+imageLabel.TextureId = "rbxassetid://11816152645"
+imageLabel.Name = "imageLabel"
+imageLabel.Parent = game.Workspace.DoorsAudio.Ambush.billy
