@@ -25,7 +25,7 @@ sound.Looped = true
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound.Volume = 2
 sound:Play()
-task.wait(1)
+
 local sound2 = Instance.new("Sound", part)
 sound2.SoundId = "rbxassetid://8880765497" 
 sound2.Pitch = 0.55
@@ -34,6 +34,7 @@ sound2.Looped = true
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound2.Volume = 3
 sound2:Play()
+
 local args = {
     [1] = {
         [1] = "LOAD",
@@ -47,16 +48,19 @@ local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
 Ambush.parent = game.Workspace.DoorsAudio
 task.wait(5)
+
 local billboard = Instance.new("BillboardGui")
 billboard.Name = "Billy"
 billboard.Parent = game.Workspace.Ambush
 billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
+
 local imageLabel = Instance.new("ImageLabel")
 imageLabel.Parent = game.Workspace.Ambush.Billy
 imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
 task.wait(2)
+
 local args = {
     [1] = {
         [1] = "LOAD",
@@ -77,6 +81,8 @@ ParticleEmitter.Size = NumberSequence.new({5,5,5})
 ParticleEmitter.EmissionDirection = Vector3.new(10, 0, 10) -- sets the direction of particle emission
 ParticleEmitter.Lifetime = NumberRange.new(1, 2) -- sets the lifetime of particles
 ParticleEmitter.Rate = 100 -- sets the rate of particle emission
+task.wait(1)
+
 local billyboard = Instance.new("BillboardGui")
 billyboard.Name = "BigBilly"
 billyboard.Parent = game.Workspace.DoorsAudio.RushNew
@@ -87,6 +93,7 @@ imgLabel.Parent = game.Workspace.DoorsAudio.RushNew.BigBilly
 imgLabel.Image = "rbxassetid://12234085731" -- replace with the actual asset id of the image you want to use
 imgLabel.Size = UDim2.new(1, 0, 1, 0)
 imgLabel.BackgroundTransparency = 1
+
 local args = {
     [1] = {
         [1] = "LOAD",
@@ -99,7 +106,8 @@ task.wait(1)
 local ripper = game.Workspace.Part
 ripper.Name = "ripe"
 ripper.Parent = game.Workspace.DoorsAudio
-})
+task.wait(5)
+
 local bill = Instance.new("BillboardGui")
 bill.Name = "bill"
 bill.Parent = game.Workspace.DoorsAudio.ripe
