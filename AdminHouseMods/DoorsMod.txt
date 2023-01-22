@@ -50,15 +50,16 @@ Ambush.parent = game.Workspace.DoorsAudio
 task.wait(5)
 local billboard = Instance.new("BillboardGui")
 billboard.Name = "Billy"
-billboard.Parent = game.Workspace.DoorsAudio.Ambush
+billboard.Parent = game.Workspace.Ambush
 billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imageLabel = Instance.new("ImageLabel")
-imageLabel.Parent = game.Workspace.DoorsAudio.Ambush.Billy
+imageLabel.Parent = game.Workspace.Ambush.Billy
 imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
-
+})
+task.wait(2)
 local args = {
     [1] = {
         [1] = "LOAD",
@@ -67,7 +68,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-
+task.wait(1)
 local rysh = game.Workspace.Part
 rysh.Name = "RushNew"
 rysh.Parent = game.Workspace.DoorsAudio
@@ -79,14 +80,38 @@ ParticleEmitter.Size = NumberSequence.new({5,5,5})
 ParticleEmitter.EmissionDirection = Vector3.new(10, 0, 10) -- sets the direction of particle emission
 ParticleEmitter.Lifetime = NumberRange.new(1, 2) -- sets the lifetime of particles
 ParticleEmitter.Rate = 100 -- sets the rate of particle emission
-
+})
 local billyboard = Instance.new("BillboardGui")
-billboard.Name = "BigBilly"
-billboard.Parent = game.Workspace.DoorsAudio.RushNew
-billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
+billyboard.Name = "BigBilly"
+billyboard.Parent = game.Workspace.DoorsAudio.RushNew
+billyboard.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imgLabel = Instance.new("ImageLabel")
 imgLabel.Parent = game.Workspace.DoorsAudio.RushNew.BigBilly
 imgLabel.Image = "rbxassetid://12234085731" -- replace with the actual asset id of the image you want to use
 imgLabel.Size = UDim2.new(1, 0, 1, 0)
 imgLabel.BackgroundTransparency = 1
+})
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "Asset Ripper"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+task.wait(1)
+local ripper = game.Workspace.Part
+ripper.Name = "ripe"
+ripper.Parent = game.Workspace.DoorsAudio
+})
+local bill = Instance.new("BillboardGui")
+bill.Name = "bill"
+bill.Parent = game.Workspace.DoorsAudio.ripe
+bill.Size = UDim2.new(10.0, 0, 10.0, 0)
+
+local imLabel = Instance.new("ImageLabel")
+imLabel.Parent = game.Workspace.DoorsAudio.ripe.bill
+imLabel.Image = "rbxassetid://11816152645" -- replace with the actual asset id of the image you want to use
+imLabel.Size = UDim2.new(1, 0, 1, 0)
+imLabel.BackgroundTransparency = 1
