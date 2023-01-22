@@ -145,3 +145,15 @@ Label.Parent = game.Workspace.DoorsAudio.A60.Willy
 Label.Image = "rbxassetid://11287256498" -- replace with the actual asset id of the image you want to use
 Label.Size = UDim2.new(1, 0, 1, 0)
 Label.BackgroundTransparency = 1
+
+local animation = game.Workspace.DoorsAudio.A60
+while true do
+animation.TextureId = "rbxassetid://11710147805"
+task.wait(0.5)
+animation.TextureId = "rbxassetid://11710144220"
+task.wait(0.5)
+animation.TextureId = "rbxassetid://11710154026"
+task.wait(0.5)
+animation.TextureId = "rbxassetid://11287256498"
+task.wait(0.5)
+end
