@@ -146,7 +146,7 @@ Label.Image = "rbxassetid://11287256498" -- replace with the actual asset id of 
 Label.Size = UDim2.new(1, 0, 1, 0)
 Label.BackgroundTransparency = 1
 
-local animation = game.Workspace.DoorsAudio.A60
+local animation = game.Workspace.DoorsAudio.A60.Willy.ImageLabel
 while true do
 animation.Image = "rbxassetid://11710147805"
 task.wait(0.5)
