@@ -50,9 +50,10 @@ Ambush.parent = game.Workspace.DoorsAudio
 
 local billboard = Instance.new("ScreenGui")
 billboard.Name = "Billy"
-billboard.Parent = game.Workspace.DoorsAudio.Ambush
+billboard.Parent = game.Workspace.Ambush
+billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imageLabel = Instance.new("ImageLabel")
-imageLabel.Parent = Billy
-imageLabel.Image = "rbxassetid://11841812075" -- replace with the actual asset id of the image you want to use
+imageLabel.Parent = game.Workspace.Ambush.Billy
+imageLabel.Image = "rbxassetid://11816152645" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
