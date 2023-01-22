@@ -12,9 +12,9 @@ local folder = Instance.new("Folder", parent)
 folder.Name = "DoorsAudio"
 folder.Parent = Workspace
 
-local part = game.Workspace.Part
-part.Name = "AmbushNew"
-part.Parent = game.Workspace.DoorsAudio
+local fart = game.Workspace.Part
+fart.Name = "AmbushNew"
+fart.Parent = game.Workspace.DoorsAudio
 
 -- create a sound
 local sound = Instance.new("Sound", part)
@@ -53,7 +53,7 @@ wait(5)
 
 -- Declare and initialize objects
 local camera = game.Workspace.CurrentCamera
-local emu = game.Workspace.DoorsAudio.AmbushNew
+local part = game.Workspace.DoorsAudio.AmbushNew
 local billboard = Instance.new("BillboardGui")
 local label = Instance.new("TextLabel")
 
@@ -61,7 +61,7 @@ local label = Instance.new("TextLabel")
 camera.CameraType = Enum.CameraType.Scriptable
 
 -- Set up billboard
-billboard.MaxDistance = 10
+billboard.MaxDistance = 100000000
 billboard.Adornee = part
 billboard.AlwaysOnTop = true
 billboard.Size = UDim2.new(0, 50, 0, 50)
