@@ -136,7 +136,7 @@ hetbox.Parent = game.Workspace.DoorsAudio.ripe
 
 local hitbox = game.Workspace.DoorsAudio.ripe.Hitbox
 local anger = game.Workspace.DoorsAudio.ripe.bill.ImageLabel
-
+task.wait(3)
 hitbox.Touched:Connect(function(hit)
     if hit.Parent:FindFirstChild("Humanoid") then
         anger.Image = "rbxassetid://12236682339"
