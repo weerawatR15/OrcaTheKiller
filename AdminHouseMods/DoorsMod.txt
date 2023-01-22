@@ -43,11 +43,11 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-task.wait(5)
+task.wait(1)
 local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
 Ambush.parent = game.Workspace.DoorsAudio
-task.wait(1)
+task.wait(5)
 local billboard = Instance.new("BillboardGui")
 billboard.Name = "Billy"
 billboard.Parent = game.Workspace.Ambush
