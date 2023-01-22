@@ -124,7 +124,7 @@ sound3:Play()
 local args = {
     [1] = {
         [1] = "LOAD",
-        [2] = "Hitbox"
+        [2] = "hitbox"
     }
 }
 
