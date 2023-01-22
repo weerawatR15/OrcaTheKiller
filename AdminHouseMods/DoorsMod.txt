@@ -65,6 +65,7 @@ billboard.MaxDistance = 100000000
 billboard.Adornee = part
 billboard.AlwaysOnTop = true
 billboard.Size = UDim2.new(0, 50, 0, 50)
+billboard.TextureId = "rbxassetid://11816152645"
 
 -- Set up label
 label.Size = UDim2.new(1, 0, 1, 0)
