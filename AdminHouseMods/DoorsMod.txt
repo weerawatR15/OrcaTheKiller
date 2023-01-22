@@ -58,3 +58,35 @@ imageLabel.Parent = game.Workspace.Ambush.Billy
 imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
+
+local args = {
+    [1] = {
+        [1] = "LOAD",
+        [2] = "Asset Rush"
+    }
+}
+
+game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
+
+local rysh = game.Workspace.Part
+rysh.Name = "RushNew"
+rysh.Parent = game.Workspace.DoorsAudio
+task.wait(5)
+local ParticleEmitter = Instance.new("ParticleEmitter")
+ParticleEmitter.Parent = game.Workspace.DoorsAudio.RushNew
+ParticleEmitter.Texture = "rbxassetid://12234037224"
+ParticleEmitter.Size = NumberSequence.new({5,5,5})
+ParticleEmitter.EmissionDirection = Vector3.new(10, 0, 10) -- sets the direction of particle emission
+ParticleEmitter.Lifetime = NumberRange.new(1, 2) -- sets the lifetime of particles
+ParticleEmitter.Rate = 100 -- sets the rate of particle emission
+
+local billyboard = Instance.new("BillboardGui")
+billboard.Name = "BigBilly"
+billboard.Parent = game.Workspace.DoorsAudio.RushNew
+billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
+
+local imgLabel = Instance.new("ImageLabel")
+imgLabel.Parent = game.Workspace.DoorsAudio.RushNew.BigBilly
+imgLabel.Image = "rbxassetid://e" -- replace with the actual asset id of the image you want to use
+imgLabel.Size = UDim2.new(1, 0, 1, 0)
+imgLabel.BackgroundTransparency = 1
