@@ -87,6 +87,6 @@ billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imgLabel = Instance.new("ImageLabel")
 imgLabel.Parent = game.Workspace.DoorsAudio.RushNew.BigBilly
-imgLabel.Image = "rbxassetid://e" -- replace with the actual asset id of the image you want to use
+imgLabel.Image = "rbxassetid://12234085731" -- replace with the actual asset id of the image you want to use
 imgLabel.Size = UDim2.new(1, 0, 1, 0)
 imgLabel.BackgroundTransparency = 1
