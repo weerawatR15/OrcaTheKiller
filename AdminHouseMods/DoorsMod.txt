@@ -129,7 +129,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Network.BuildSaving:InvokeServer(unpack(args))
-task.wait(1)
+task.wait(2)
 local hetbox = game.Workspace.Part
 hetbox.Name = "Hitbox"
 hetbox.Parent = game.Workspace.DoorsAudio.ripe
