@@ -22,6 +22,7 @@ sound.SoundId = "rbxassetid://8880765497"
 sound.Pitch = 0.5
 sound.EmitterSize = 20 -- decrease the emitter size (for earlier volume drop off)
 sound.Looped = true
+sound.MaxDistance = 100
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound.Volume = 2
 sound:Play()
@@ -29,8 +30,9 @@ sound:Play()
 local sound2 = Instance.new("Sound", part)
 sound2.SoundId = "rbxassetid://8880765497" 
 sound2.Pitch = 0.55
-sound2.EmitterSize = 10 -- decrease the emitter size (for earlier volume drop off)
+sound2.EmitterSize = 13 -- decrease the emitter size (for earlier volume drop off)
 sound2.Looped = true
+sound2.MaxDistance = 20
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound2.Volume = 3
 sound2:Play()
@@ -112,7 +114,7 @@ imLabel.BackgroundTransparency = 1
 
 local sound3 = Instance.new("Sound", part)
 sound3.SoundId = "rbxassetid://6963538865" 
-sound3.Pitch = 1.2
+sound3.Pitch = 1.05
 sound3.EmitterSize = 10 -- decrease the emitter size (for earlier volume drop off)
 sound3.Looped = true
 sound3.Parent = game.Workspace.DoorsAudio.ripe
