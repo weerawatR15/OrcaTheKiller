@@ -47,7 +47,7 @@ task.wait(5)
 local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
 Ambush.parent = game.Workspace.DoorsAudio
-
+task.wait(1)
 local billboard = Instance.new("BillboardGui")
 billboard.Name = "Billy"
 billboard.Parent = game.Workspace.Ambush
