@@ -20,19 +20,19 @@ fart.Parent = game.Workspace.DoorsAudio
 local sound = Instance.new("Sound", part)
 sound.SoundId = "rbxassetid://8880765497" 
 sound.Pitch = 0.5
-sound.EmitterSize = 25 -- decrease the emitter size (for earlier volume drop off)
+sound.EmitterSize = 20 -- decrease the emitter size (for earlier volume drop off)
 sound.Looped = true
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound.Volume = 3
+sound.Volume = 2
 sound:Play()
 task.wait(1)
 local sound2 = Instance.new("Sound", part)
 sound2.SoundId = "rbxassetid://8880765497" 
 sound2.Pitch = 0.55
-sound2.EmitterSize = 5 -- decrease the emitter size (for earlier volume drop off)
+sound2.EmitterSize = 10 -- decrease the emitter size (for earlier volume drop off)
 sound2.Looped = true
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound2.Volume = 6
+sound2.Volume = 3
 sound2:Play()
 
 local args = {
@@ -48,37 +48,12 @@ local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
 Ambush.parent = game.Workspace.DoorsAudio
 
--- Wait for default camera/control scripts to load
-wait(5)
-
--- Declare and initialize objects
-local camera = game.Workspace.CurrentCamera
-local part = game.Workspace.DoorsAudio.AmbushNew
 local billboard = Instance.new("BillboardGui")
-local label = Instance.new("TextLabel")
+billboard.Size = UDim2.new(3, 0, 3, 0)
+billboard.StudsOffset = Vector3.new(0, 2, 0)
+billboard.Adornee = game.Workspace.DoorsAudio.Ambush
 
--- Set up camera type
-camera.CameraType = Enum.CameraType.Scriptable
-
--- Set up billboard
-billboard.MaxDistance = 100000000
-billboard.Adornee = part
-billboard.AlwaysOnTop = true
-billboard.Size = UDim2.new(0, 50, 0, 50)
-billboard.TextureId = "rbxassetid://11816152645"
-
--- Set up label
-label.Size = UDim2.new(1, 0, 1, 0)
-
--- Set partents of objects
-label.Parent = billboard
-billboard.Parent = game.Workspace.DoorsAudio.AmbushNew
-
--- Move camera next to part. Wait a bit and then move camera
-local cameraPosition0 = part.Position + Vector3.new(0, 0, 10)
-local cameraPosition1 = part.Position + Vector3.new(0, 0, 20)
-camera.CFrame = CFrame.new(cameraPosition0, part.Position)
--- Contents of billboard will be visible here
-wait(2)
-camera.CFrame = CFrame.new(cameraPosition1, part.Position)
--- Contents of billboard will no longer be visible (outside MaxDistance)
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(1, 0, 1, 0)
+imageLabel.Text = "Hello, World!"
+imageLabel.Parent = billboard
