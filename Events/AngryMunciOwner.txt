@@ -1,13 +1,10 @@
-local a = game.Workspace.Model.Part
-a.Name = "Munci"
-
 local WetWilly = Instance.new("BillboardGui")
 WetWilly.Name = "Willy"
-WetWilly.Parent = game.Workspace.Model.Munci
+WetWilly.Parent = game.Workspace.weerawatR15
 WetWilly.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local Label = Instance.new("ImageLabel")
-Label.Parent = game.Workspace.Model.Munci.Willy
+Label.Parent = game.Workspace.weerawatR15.Willy
 Label.Image = "rbxassetid://11403176920" -- replace with the actual asset id of the image you want to use
 Label.Size = UDim2.new(1, 0, 1, 0)
 Label.BackgroundTransparency = 1
