@@ -133,15 +133,20 @@ task.wait(2)
 local hetbox = game.Workspace.Part
 hetbox.Name = "Hitbox"
 hetbox.Parent = game.Workspace.DoorsAudio.ripe
+local anger = game.Workspace.DoorsAudio.ripe.bill.imLabel
+local scr = Instance.new("Script")
+scr.Name = "Script"
+scr.Source = [[
+local this = "emu"
 
-local hitbox = game.Workspace.DoorsAudio.ripe.Hitbox
-local anger = game.Workspace.DoorsAudio.ripe.bill.ImageLabel
-task.wait(3)
-hitbox.Touched:Connect(function(hit)
+Hitbox.Touched:Connect(function(hit)
     if hit.Parent:FindFirstChild("Humanoid") then
         anger.Image = "rbxassetid://12236682339"
     end
 end)
+print(this)
+]]
+scr.Parent = game.Workspace.DoorsAudio.ripe.Hitbox
 
 local args = {
     [1] = {
