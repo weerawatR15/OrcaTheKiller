@@ -11,3 +11,7 @@ Label.Parent = game.Workspace.Model.Munci.Willy
 Label.Image = "rbxassetid://11403176920" -- replace with the actual asset id of the image you want to use
 Label.Size = UDim2.new(1, 0, 1, 0)
 Label.BackgroundTransparency = 1
+task.wait(1)
+local fe = game.Workspace.Model.Part
+fe.Name = "Fart"
+fe:Destroy()
