@@ -69,7 +69,7 @@ echo2.Delay = 1
 echo2.DryLevel = 3
 echo2.Name = "EchoSoundEffect"
 echo2.Priority = 1
-echo2.WetLevel = 1
+echo2.WetLevel = 3
 echo2.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound1
 
 local distort2 = Instance.new("DistortionSoundEffect")
@@ -83,7 +83,7 @@ echo.Delay = 1
 echo.DryLevel = 3
 echo.Name = "EchoSoundEffect"
 echo.Priority = 1
-echo.WetLevel = 1
+echo.WetLevel = 3
 echo.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound2
 
 local pi = Instance.new("PitchShiftSoundEffect")
