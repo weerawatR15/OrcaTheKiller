@@ -15,7 +15,7 @@ sound.EmitterSize = 20 -- decrease the emitter size (for earlier volume drop off
 sound.Looped = true
 sound.MaxDistance = 100
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound.Volume = 1
+sound.Volume = 0.7
 sound.RollOffMode = Enum.RollOffMode.Linear
 sound:Play()
 
@@ -27,7 +27,7 @@ sound2.Looped = true
 sound2.MaxDistance = 20
 sound2.Name = "Sound2"
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound2.Volume = 1.3
+sound2.Volume = 0.8
 sound2.RollOffMode = Enum.RollOffMode.Linear
 sound2:Play()
 task.wait(1)
@@ -47,7 +47,7 @@ imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
 
 local distort = Instance.new("DistortionSoundEffect")
-distort.Level = 0.3
+distort.Level = 0.99
 distort.Name = "DistortionSoundEffect"
 distort.Priority = 0
 distort.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
@@ -80,7 +80,7 @@ tr.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
 
 local distort2 = Instance.new("DistortionSoundEffect")
 distort2.Name = "DistortionSoundEffect2"
-distort2.Level = 0.3
+distort2.Level = 0.88
 distort2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
 
 local echo2 = Instance.new("EchoSoundEffect")
