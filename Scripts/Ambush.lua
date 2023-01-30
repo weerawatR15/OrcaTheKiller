@@ -6,7 +6,7 @@ local fart = game.Workspace.Part
 fart.Name = "AmbushNew"
 fart.Parent = game.Workspace.DoorsAudio
 
--- create a sound
+-- Don't you dare skid my script nigga
 local sound = Instance.new("Sound", part)
 sound.SoundId = "rbxassetid://8880765497" 
 sound.Pitch = 0.5
@@ -15,7 +15,7 @@ sound.Looped = true
 sound.MaxDistance = 100
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound.Volume = 2
-sound.RollOffMode = Linear
+sound.RollOffMode = Enum.RollOffMode.Linear
 sound:Play()
 
 local sound2 = Instance.new("Sound", part)
@@ -26,7 +26,7 @@ sound2.Looped = true
 sound2.MaxDistance = 20
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound2.Volume = 3
-sound.RollOffMode = Linear
+sound.RollOffMode = Enum.RollOffMode.Linear
 sound2:Play()
 task.wait(1)
 local Ambush = game.Workspace.Part
