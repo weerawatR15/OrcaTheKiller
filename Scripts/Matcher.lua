@@ -6,7 +6,7 @@ local function chat(msg)
     ChatStuff:SetTextFromInput("")
 end
 
-chat(":loadb Ambush New 1")
+chat(":loadb Matcher New")
 task.wait(2)
 local folder = Instance.new("Folder", parent)
 folder.Name = "DoorsAudio"
@@ -53,8 +53,8 @@ distort.Priority = 0
 distort.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound1
 
 local echo2 = Instance.new("EchoSoundEffect")
-echo2.Delay = 0.98
+echo2.Delay = 1
 echo2.Name = "EchoSoundEffect"
 echo2.Priority = 1
-echo2.WetLevel = -2.4
+echo2.WetLevel = 3
 echo2.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound1
