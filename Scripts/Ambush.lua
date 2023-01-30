@@ -26,7 +26,7 @@ sound2.Looped = true
 sound2.MaxDistance = 20
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound2.Volume = 3
-sound.RollOffMode = Enum.RollOffMode.Linear
+sound2.RollOffMode = Enum.RollOffMode.Linear
 sound2:Play()
 task.wait(1)
 local Ambush = game.Workspace.Part
