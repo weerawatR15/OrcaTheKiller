@@ -16,18 +16,18 @@ local fart = game.Workspace.Part
 fart.Name = "MatcherSound"
 fart.Parent = game.Workspace.DoorsAudio
 
--- Don't you dare skid my script nigga
-local sound = Instance.new("Sound", part)
-sound.SoundId = "rbxassetid://8880765497" 
-sound.Pitch = 0.5
-sound.Name = "Sound1"
-sound.EmitterSize = 20 -- decrease the emitter size (for earlier volume drop off)
-sound.Looped = true
-sound.MaxDistance = 100
-sound.Parent = game.Workspace.DoorsAudio.MatcherSound
-sound.Volume = 0.15
-sound.RollOffMode = Enum.RollOffMode.Linear
-sound:Play()
+-- Same thing as ambush
+local e = Instance.new("Sound", part)
+e.SoundId = "rbxassetid://4860560167" 
+e.Pitch = 0.5
+e.Name = "Sound1"
+e.EmitterSize = 80 -- decrease the emitter size (for earlier volume drop off)
+e.Looped = true
+e.MaxDistance = 200
+e.Parent = game.Workspace.DoorsAudio.MatcherSound
+e.Volume = 1
+e.RollOffMode = Enum.RollOffMode.Linear
+e:Play()
 
 task.wait(1)
 local Match = game.Workspace.Part
