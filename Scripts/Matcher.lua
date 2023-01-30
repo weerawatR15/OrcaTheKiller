@@ -83,3 +83,9 @@ echo.Name = "EchoSoundEffect"
 echo.Priority = 1
 echo.WetLevel = 3
 echo.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound2
+
+local pi = Instance.new("PitchShiftSoundEffect")
+pi.Octave = 1.7
+pi.Name = "PitchShiftSoundEffect"
+pi.Priority = 0
+pi.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound2
