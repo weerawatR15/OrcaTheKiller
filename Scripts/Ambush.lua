@@ -34,10 +34,10 @@ sound2.SoundId = "rbxassetid://8880765497"
 sound2.Pitch = 0.55
 sound2.EmitterSize = 13 -- decrease the emitter size (for earlier volume drop off)
 sound2.Looped = true
-sound2.MaxDistance = 20
+sound2.MaxDistance = 29
 sound2.Name = "Sound2"
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound2.Volume = 0.25
+sound2.Volume = 0.29
 sound2.RollOffMode = Enum.RollOffMode.Linear
 sound2:Play()
 task.wait(1)
