@@ -1,3 +1,11 @@
+local ChatStuff = game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
+
+local function chat(msg)
+    ChatStuff:SetTextFromInput(msg)
+    game.Players:Chat(msg)
+    ChatStuff:SetTextFromInput("")
+end
+
 local folder = Instance.new("Folder", parent)
 folder.Name = "DoorsAudio"
 folder.Parent = Workspace
@@ -109,3 +117,5 @@ tr2.Depth = 1
 tr2.Frequency = 20
 tr2.Duty = 0.94
 tr2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
+
+chat(":notify we,me Crocs loaded")
