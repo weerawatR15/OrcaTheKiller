@@ -15,6 +15,7 @@ sound.Looped = true
 sound.MaxDistance = 100
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound.Volume = 2
+sound.RollOffMode = Linear
 sound:Play()
 
 local sound2 = Instance.new("Sound", part)
@@ -25,6 +26,7 @@ sound2.Looped = true
 sound2.MaxDistance = 20
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound2.Volume = 3
+sound.RollOffMode = Linear
 sound2:Play()
 task.wait(1)
 local Ambush = game.Workspace.Part
