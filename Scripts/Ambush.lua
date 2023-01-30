@@ -32,9 +32,9 @@ sound:Play()
 local sound2 = Instance.new("Sound", part)
 sound2.SoundId = "rbxassetid://8880765497" 
 sound2.Pitch = 0.55
-sound2.EmitterSize = 13 -- decrease the emitter size (for earlier volume drop off)
+sound2.EmitterSize = 28 -- decrease the emitter size (for earlier volume drop off)
 sound2.Looped = true
-sound2.MaxDistance = 29
+sound2.MaxDistance = 50
 sound2.Name = "Sound2"
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
 sound2.Volume = 0.29
@@ -120,4 +120,4 @@ tr2.Frequency = 20
 tr2.Duty = 0.94
 tr2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
 
-chat(":notify we,me Crocs loaded| :loadb Ambush New 2")
+chat(":notify we,me Crocs loaded| :wait 2| :loadb Ambush New 2")
