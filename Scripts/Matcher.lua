@@ -31,13 +31,13 @@ e:Play()
 
 local e2 = Instance.new("Sound", part)
 e2.SoundId = "rbxassetid://4860560167" 
-e2.Pitch = 0.6
+e2.Pitch = 0.7
 e2.Name = "Sound2"
 e2.EmitterSize = 29 -- decrease the emitter size (for earlier volume drop off)
 e2.Looped = true
 e2.MaxDistance = 35
 e2.Parent = game.Workspace.DoorsAudio.MatcherSound
-e2.Volume = 1
+e2.Volume = 0.25
 e2.RollOffMode = Enum.RollOffMode.Linear
 e2:Play()
 
