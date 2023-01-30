@@ -19,7 +19,7 @@ fart.Parent = game.Workspace.DoorsAudio
 -- Same thing as ambush
 local e = Instance.new("Sound", part)
 e.SoundId = "rbxassetid://4860560167" 
-e.Pitch = 0.5
+e.Pitch = 1
 e.Name = "Sound1"
 e.EmitterSize = 80 -- decrease the emitter size (for earlier volume drop off)
 e.Looped = true
@@ -28,6 +28,18 @@ e.Parent = game.Workspace.DoorsAudio.MatcherSound
 e.Volume = 1
 e.RollOffMode = Enum.RollOffMode.Linear
 e:Play()
+
+local e2 = Instance.new("Sound", part)
+e2.SoundId = "rbxassetid://4860560167" 
+e2.Pitch = 0.6
+e2.Name = "Sound2"
+e2.EmitterSize = 29 -- decrease the emitter size (for earlier volume drop off)
+e2.Looped = true
+e2.MaxDistance = 35
+e2.Parent = game.Workspace.DoorsAudio.MatcherSound
+e2.Volume = 1
+e2.RollOffMode = Enum.RollOffMode.Linear
+e2:Play()
 
 task.wait(1)
 local Match = game.Workspace.Part
@@ -58,3 +70,16 @@ echo2.Name = "EchoSoundEffect"
 echo2.Priority = 1
 echo2.WetLevel = 3
 echo2.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound1
+
+local distort2 = Instance.new("DistortionSoundEffect")
+distort2.Level = 1
+distort2.Name = "DistortionSoundEffect"
+distort2.Priority = 0
+distort2.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound2
+
+local echo = Instance.new("EchoSoundEffect")
+echo.Delay = 1
+echo.Name = "EchoSoundEffect"
+echo.Priority = 1
+echo.WetLevel = 3
+echo.Parent = game.Workspace.DoorsAudio.MatcherSound.Sound2
