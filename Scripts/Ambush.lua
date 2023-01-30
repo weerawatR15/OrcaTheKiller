@@ -6,6 +6,8 @@ local function chat(msg)
     ChatStuff:SetTextFromInput("")
 end
 
+chat(":loadb Ambush New 1")
+task.wait(2)
 local folder = Instance.new("Folder", parent)
 folder.Name = "DoorsAudio"
 folder.Parent = Workspace
@@ -118,4 +120,4 @@ tr2.Frequency = 20
 tr2.Duty = 0.94
 tr2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
 
-chat(":notify we,me Crocs loaded")
+chat(":notify we,me Crocs loaded| :loadb Ambush New 2")
