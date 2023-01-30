@@ -15,7 +15,7 @@ sound.EmitterSize = 20 -- decrease the emitter size (for earlier volume drop off
 sound.Looped = true
 sound.MaxDistance = 100
 sound.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound.Volume = 0.7
+sound.Volume = 0.15
 sound.RollOffMode = Enum.RollOffMode.Linear
 sound:Play()
 
@@ -27,7 +27,7 @@ sound2.Looped = true
 sound2.MaxDistance = 20
 sound2.Name = "Sound2"
 sound2.Parent = game.Workspace.DoorsAudio.AmbushNew
-sound2.Volume = 0.8
+sound2.Volume = 0.25
 sound2.RollOffMode = Enum.RollOffMode.Linear
 sound2:Play()
 task.wait(1)
@@ -45,6 +45,7 @@ imageLabel.Parent = game.Workspace.DoorsAudio.Ambush.Billy
 imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
+imageLabel.ImageTransparency = 0.2
 
 local distort = Instance.new("DistortionSoundEffect")
 distort.Level = 0.99
