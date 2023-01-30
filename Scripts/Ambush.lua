@@ -47,11 +47,59 @@ imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
 
 local distort = Instance.new("DistortionSoundEffect")
-distort.Level = 0.7
+distort.Level = 0.99
 distort.Name = "DistortionSoundEffect"
 distort.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
 
-local distort = Instance.new("DistortionSoundEffect")
-distort.Name = "DistortionSoundEffect2"
-distort.Level = 0.7
-distort.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
+local echo = Instance.new("EchoSoundEffect")
+echo.Delay = 0.98
+echo.Name = "EchoSoundEffect"
+echo.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
+
+local eq = Instance.new("EqualizerSoundEffect")
+eq.HighGain = 4.6
+eq.LowGain = -21.5
+eq.MidGain = 0.8
+eq.Name = "EqualizerSoundEffect"
+eq.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
+
+local fl = Instance.new("FlangeSoundEffect")
+fl.Depth = 1
+fl.Mix = 1
+fl.Rate = 0.2
+fl.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
+
+local tr = Instance.new("TremoloSoundEffect")
+tr.Depth = 1
+tr.Frequency = 20
+tr.Duty = 0.94
+tr.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound1
+
+local distort2 = Instance.new("DistortionSoundEffect")
+distort2.Name = "DistortionSoundEffect2"
+distort2.Level = 0.99
+distort2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
+
+local echo2 = Instance.new("EchoSoundEffect")
+echo2.Delay = 0.98
+echo2.Name = "EchoSoundEffect"
+echo2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
+
+local eq2 = Instance.new("EqualizerSoundEffect")
+eq2.HighGain = 4.6
+eq2.LowGain = -21.5
+eq2.MidGain = 0.8
+eq2.Name = "EqualizerSoundEffect"
+eq2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
+
+local fl2 = Instance.new("FlangeSoundEffect")
+fl2.Depth = 1
+fl2.Mix = 1
+fl2.Rate = 0.2
+fl2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
+
+local tr2 = Instance.new("TremoloSoundEffect")
+tr2.Depth = 1
+tr2.Frequency = 20
+tr2.Duty = 0.94
+tr2.Parent = game.Workspace.DoorsAudio.AmbushNew.Sound2
