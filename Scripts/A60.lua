@@ -41,7 +41,7 @@ billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
 
 local imageLabel = Instance.new("ImageLabel")
 imageLabel.Parent = game.Workspace.DoorsAudio.A60.Billy
-imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
+imageLabel.Image = "rbxassetid://11287256498" -- replace with the actual asset id of the image you want to use
 imageLabel.Size = UDim2.new(1, 0, 1, 0)
 imageLabel.BackgroundTransparency = 1
 imageLabel.ImageTransparency = 0.2
@@ -56,6 +56,18 @@ local pi = Instance.new("PitchShiftSoundEffect")
 pi.Octave = 0.5
 pi.Name = "YourMomEffects"
 pi.Parent = game.Workspace.DoorsAudioA60New.Sound1
+
+local animation = game.Workspace.DoorsAudio.A60.Billy.ImageLabel
+while true do
+animation.Image = "rbxassetid://11710147805"
+task.wait(0.5)
+animation.Image = "rbxassetid://11710144220"
+task.wait(0.5)
+animation.Image = "rbxassetid://11710154026"
+task.wait(0.5)
+animation.Image = "rbxassetid://11287256498"
+task.wait(0.5)
+end
 
 chat(":notify we,me Crocs loaded")
 print("eek") -- moray el el
