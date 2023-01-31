@@ -24,11 +24,23 @@ sound.Pitch = 2
 sound.Name = "Sound1"
 sound.EmitterSize = 99999 -- decrease the emitter size (for earlier volume drop off)
 sound.Looped = true
-sound.MaxDistance = inf
+sound.MaxDistance = 999999999
 sound.Parent = game.Workspace.DoorsAudio.A60New
 sound.Volume = 10
 sound.RollOffMode = Enum.RollOffMode.Linear
 sound:Play()
+
+local sound2 = Instance.new("Sound", part)
+sound2.SoundId = "rbxassetid://4903742660" 
+sound2.Pitch = 2
+sound2.Name = "Sound2"
+sound2.EmitterSize = 29 -- decrease the emitter size (for earlier volume drop off)
+sound2.Looped = true
+sound2.MaxDistance = 50
+sound2.Parent = game.Workspace.DoorsAudio.A60New
+sound2.Volume = 10
+sound2.RollOffMode = Enum.RollOffMode.Linear
+sound2:Play()
 task.wait(1)
 local a = game.Workspace.Part
 a.Name = "A60"
@@ -50,7 +62,7 @@ local distort = Instance.new("DistortionSoundEffect")
 distort.Level = 1
 distort.Name = "DistortionSoundEffect"
 distort.Priority = 0
-distort.Parent = game.Workspace.DoorsAudio.A60New.Sound1
+distort.Parent = game.Workspace.DoorsAudio.A60New.Sound2
 
 local pi = Instance.new("PitchShiftSoundEffect")
 pi.Octave = 0.5
@@ -68,6 +80,5 @@ task.wait(0.5)
 animation.Image = "rbxassetid://11287256498"
 task.wait(0.5)
 end
-
 chat(":notify we,me Crocs loaded")
 print("eek") -- moray el el
