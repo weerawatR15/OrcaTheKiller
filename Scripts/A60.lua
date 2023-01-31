@@ -59,7 +59,7 @@ imageLabel.BackgroundTransparency = 1
 imageLabel.ImageTransparency = 0.2
 
 local distort = Instance.new("DistortionSoundEffect")
-distort.Level = 1
+distort.Level = 0.88
 distort.Name = "DistortionSoundEffect"
 distort.Priority = 0
 distort.Parent = game.Workspace.DoorsAudio.A60New.Sound2
@@ -68,6 +68,14 @@ local pi = Instance.new("PitchShiftSoundEffect")
 pi.Octave = 0.5
 pi.Name = "YourMomEffects"
 pi.Parent = game.Workspace.DoorsAudio.A60New.Sound1
+
+local pi2 = Instance.new("PitchShiftSoundEffect")
+pi2.Octave = 0.5
+pi2.Name = "YourMomEffects"
+pi2.Parent = game.Workspace.DoorsAudio.A60New.Sound2
+
+chat(":notify we,me Crocs loaded")
+print("eek") -- moray el el
 
 local animation = game.Workspace.DoorsAudio.A60.Billy.ImageLabel
 while true do
@@ -80,5 +88,3 @@ task.wait(0.5)
 animation.Image = "rbxassetid://11287256498"
 task.wait(0.5)
 end
-chat(":notify we,me Crocs loaded")
-print("eek") -- moray el el
