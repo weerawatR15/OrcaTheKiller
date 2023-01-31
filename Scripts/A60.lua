@@ -9,7 +9,7 @@ local function chat(msg)
 end
 
 chat(":loadb A-60 New")
-task.wait(2)
+task.wait(3)
 local folder = Instance.new("Folder", parent)
 folder.Name = "DoorsAudio"
 folder.Parent = Workspace
@@ -26,7 +26,7 @@ sound.EmitterSize = 99999 -- decrease the emitter size (for earlier volume drop 
 sound.Looped = true
 sound.MaxDistance = inf
 sound.Parent = game.Workspace.DoorsAudio.A60New
-sound.Volume = 20
+sound.Volume = 10
 sound.RollOffMode = Enum.RollOffMode.Linear
 sound:Play()
 task.wait(1)
@@ -55,7 +55,7 @@ distort.Parent = game.Workspace.DoorsAudio.A60New.Sound1
 local pi = Instance.new("PitchShiftSoundEffect")
 pi.Octave = 0.5
 pi.Name = "YourMomEffects"
-pi.Parent = game.Workspace.DoorsAudioA60New.Sound1
+pi.Parent = game.Workspace.DoorsAudio.A60New.Sound1
 
 local animation = game.Workspace.DoorsAudio.A60.Billy.ImageLabel
 while true do
