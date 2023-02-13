@@ -45,17 +45,25 @@ local Ambush = game.Workspace.Part
 Ambush.Name = "Ambush"
 Ambush.Parent = game.Workspace.DoorsAudio
 
-local billboard = Instance.new("BillboardGui")
-billboard.Name = "Billy"
-billboard.Parent = game.Workspace.DoorsAudio.Ambush
-billboard.Size = UDim2.new(10.0, 0, 10.0, 0)
+local att = Instance.new("Attachment")
+att.Name = "attachment"
+att.Parent = game.Workspace.DoorsAudio.Ambush
+task.wait(1)
+local particle = Instance.new("ParticleEmitter", workspace)
 
-local imageLabel = Instance.new("ImageLabel")
-imageLabel.Parent = game.Workspace.DoorsAudio.Ambush.Billy
-imageLabel.Image = "rbxassetid://10722835155" -- replace with the actual asset id of the image you want to use
-imageLabel.Size = UDim2.new(1, 0, 1, 0)
-imageLabel.BackgroundTransparency = 1
-imageLabel.ImageTransparency = 0.2
+particle.Enabled = true
+particle.Lifetime = NumberRange.new(0.3, 0.3)
+particle.Rate = 100
+particle.Speed = NumberRange.new(0.5, 0.5)
+particle.Texture = "rbxassetid://10722835155" -- replace with actual texture ID
+particle.Color = ColorSequence.new(Color3.new(100, 100, 100), Color3.new(1, 1, 1))
+particle.SpreadAngle = Vector2.new(16, 16)
+particle.LockedToPart = true
+particle.Size = NumberSequence.new(10, 5)
+particle.Drag = 5
+particle.Rotation = NumberRange.new(-5, 5)
+-- booting
+particle.Parent = game.Workspace.DoorsAudio.Ambush.attachment
 
 local distort = Instance.new("DistortionSoundEffect")
 distort.Level = 0.99
